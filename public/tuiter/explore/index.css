@@ -40,17 +40,25 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.wd-text-padding{
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 .wd-post-img-container{
     display: flex;
     height: 110px;
+    right: 16px;
+    padding-right: 16px;
+}
+.wd-ver1-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
 }
 .wd-icon {
     position: absolute;
+    right: 12px;
+    padding-right: 25px;
+    height: 10px;
+    width: 10px;
+}
+.wd-icon-sp {
     right: 12px;
     padding-right: 25px;
     height: 10px;
@@ -60,6 +68,7 @@
 .wd-img-post {
     position: absolute;
     right: 16px;
+    padding-right: 16px;
     display: block;
     width: 100px;
     height: 100px;
@@ -81,9 +90,15 @@
 .wd-post-container {
     display: flex;
 }
+.wd-first-container {
+
+    padding-left: 16px;
+    display: flex;
+}
 .wd-container {
     display: flex;
     justify-content: space-between;
+    padding-left: 16px;
 }
 .wd-container + hr {
     margin-top: 0;
@@ -91,7 +106,12 @@
 }
 .wd-second-hr{
     margin-top: 0;
-    border-width: 20px 30px 20px 30px;
+    /*border-width: 20px 30px 20px 30px;*/
+    border: 1px solid rgb(47,51,54);
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 .wd-dot-img{
     padding-left: 5px;
@@ -175,4 +195,19 @@
     border-bottom: 5.5px solid rgb(29,161,242);
     /*transform: scaleX(1);
     transform-origin: left;*/
+}
+.wd-all-container {
+    padding-left: 16px;
+    display: flex;
+    height: 20px;
+    width: calc(100% - 200px);
+    border-radius: 50px;
+    border-width: 1px;
+    color: darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.wd-temp{
+    display: flex;
+    padding-left:16px;
 }

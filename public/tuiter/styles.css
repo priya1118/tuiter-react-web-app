@@ -7,10 +7,11 @@
 .wd-vera-container{
     display: flex;
     flex-direction: column;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    border-left: 1px solid rgb(47,51,54);
+    border-right: 1px solid rgb(47,51,54);
     margin-left: 6px;
     margin-right: 6px;
+    /*padding: 16px;*/
 }
 .wd-last-container {
     padding-left: 12px;
