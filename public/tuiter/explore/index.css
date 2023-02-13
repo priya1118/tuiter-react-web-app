@@ -2,6 +2,14 @@
     background-color: darkgray;
     color: white;
 }
+.wd-gray-and-white{
+    background-color: white;
+    color: darkgray;
+}
+.wd-search-border{
+    border: 2px solid darkgray;
+    height: 35px;
+}
 .wd-black-and-gray {
     background-color: black;
     color: rgb(47, 51, 54);
@@ -9,12 +17,33 @@
 .wd-rounded-corners-all-around {
       border-radius: 50px;
 }
+.wd-rounded-corners {
+    border-radius: 75%;
+}
+.wd-neg-mar{
+    margin-left: -29px;
+}
+.wd-neg-mar{
+    margin-left: -19px;
+}
+.wd-neg-mar-top{
+    margin-top: -15px;
+}
+.wd-neg-mar-top-1{
+    margin-top: -5px;
+}
 .wd-border-thin {
     border-width: 1px;
     color: darkgray;
 }
 .wd-border-trans{
-    border: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.wd-trans{
+    background: transparent;
 }
 .wd-text-field-height-width{
     height: 20px;
@@ -25,6 +54,10 @@
 }
 .wd-no-outline{
     outline: none;
+}
+.wd-follow-dp{
+    width: 100px;
+    height: 50px;
 }
 .wd-border-solid {
     border-style: solid; }
@@ -89,6 +122,18 @@
 }
 .wd-post-container {
     display: flex;
+}
+.wd-neg-mar-left{
+    margin-left: -150px;
+}
+.wd-borders{
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+.wd-pos-rel{
+    position: relative;
+    padding-left: 1px;
+    padding-right: 3px;
 }
 .wd-first-container {
 
@@ -184,6 +229,10 @@
 }
 */
 
+.wd-active-col{
+    color: dimgray;
+}
+
 .wd-active, .wd-row:hover,
 .wd-row:active {
 /*    background: transparent;
@@ -193,6 +242,7 @@
     position: relative; */
     color: rgb(29,161,242);
     border-bottom: 5.5px solid rgb(29,161,242);
+    border-width: 5px;
     /*transform: scaleX(1);
     transform-origin: left;*/
 }
@@ -210,4 +260,105 @@
 .wd-temp{
     display: flex;
     padding-left:16px;
+}
+.wd-column-div{
+    display: flex;
+    flex-direction: column;
+}
+.wd-margin-all-around{
+    margin: 20px;
+}
+.wd-round-button{
+    border-radius: 50px;
+    background: blue;
+    color: white;
+}
+.btn-custom-edges {
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+.wd-pri-blue{
+    background-color: #0d6efd;
+    color: white;
+    border: #0d6efd;
+}
+.wd-dodge-blue{
+    background-color: dodgerblue;
+    color: white;
+    border: dodgerblue;
+}
+.wd-button-container-tweet {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.wd-underlined-link {
+    text-decoration: none;
+    border-top: 0;
+    border: none;
+    height: 30px;
+    border-radius: 50px;
+    padding-bottom: 2px;
+}
+.wd-button-container {
+    display: flex;
+    height: 35px;
+    width: 65px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.wd-dark-gray{
+    color: dimgray;
+}
+.wd-black{
+    background-color: white;
+    color: black;
+}
+.wd-no-underline{
+    text-decoration: none;
+}
+.wd-border-none{
+    border: none;
+}
+.wd-bg-left{
+    background-color: white;
+    color: black;
+}
+.wd-black-bg-white-text{
+    background-color: black;
+    color: white;
+}
+.wd-bg-right{
+    background-color: white;
+    color: black;
+}
+.wd-bg-main{
+    background-color: white;
+    color: black;
+}
+.text-on-image {
+    background-size: cover;
+    height: 400px;
+    width: 82%;
+    position: relative;
+}
+
+.texty {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.wd-smol_pics{
+    height: 70px;
+    width: 70px;
 }
