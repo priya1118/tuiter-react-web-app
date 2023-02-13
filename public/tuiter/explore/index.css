@@ -315,6 +315,14 @@
 .wd-dark-gray{
     color: dimgray;
 }
+.wd-bg-lg{
+    background-color: lightgray;
+}
+.wd-border-light{
+    border: 1px solid lightgray;
+    border-left-padding: 2px;
+    border-radius: 0;
+}
 .wd-black{
     background-color: white;
     color: black;
@@ -324,6 +332,12 @@
 }
 .wd-border-none{
     border: none;
+}
+.wd-round-bor{
+    border-radius: 20px;
+}
+wd-bg-l{
+    background-color: gray;
 }
 .wd-bg-left{
     background-color: white;
