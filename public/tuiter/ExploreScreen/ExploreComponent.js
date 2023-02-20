@@ -1,5 +1,5 @@
 /* eslint-env jquery */
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
     let list = PostSummaryList();
     return `
