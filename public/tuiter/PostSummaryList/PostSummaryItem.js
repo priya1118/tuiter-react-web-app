@@ -2,7 +2,7 @@ const PostSummaryItem = (post) => {
     return (`
    <li class="list-group-item">
     <div class="post-summary-item row">
-      <div class="col-10 post-summary-item__content">
+      <div class="col-xxl-10 col-md-9 col-sm-9 col-xs-9 post-summary-item__content">
         <div class="post-summary-item__details">
           <div class="post-summary-item__topic text-muted">${post.topic}</div>
           <div class="d-flex">
@@ -14,7 +14,7 @@ const PostSummaryItem = (post) => {
         <div class="post-summary-item__title">${post.title}</div>
       </div>
       <div class="col-2 post-summary-item__image p-2">
-        <img src="${post.image}" alt="${post.title}" style="border-radius: 10px" height="70px" width="70px">
+        <img src="${post.image}" alt="${post.title}" style="border-radius: 10px" height="65px" width="65px">
       </div>
     </div>
     </li>
