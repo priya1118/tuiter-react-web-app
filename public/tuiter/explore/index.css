@@ -32,6 +32,9 @@
 .wd-neg-mar-top-1{
     margin-top: -5px;
 }
+.wd-neg-mar-left-1{
+    margin-left: -7px;
+}
 .wd-border-thin {
     border-width: 1px;
     color: darkgray;
@@ -240,9 +243,7 @@
     height: 10px;
     font-family: sans-serif;
     position: relative; */
-    color: rgb(29,161,242);
-    border-bottom: 5.5px solid rgb(29,161,242);
-    border-width: 5px;
+    color:white;
     /*transform: scaleX(1);
     transform-origin: left;*/
 }
@@ -268,9 +269,20 @@
 .wd-margin-all-around{
     margin: 20px;
 }
+.wd-active {
+    color: steelblue;
+}
 .wd-round-button{
     border-radius: 50px;
     background: blue;
+    color: white;
+}
+.list-group-item {
+    color: white;
+}
+
+.list-group-item.active {
+    background-color: steelblue;
     color: white;
 }
 .btn-custom-edges {
@@ -314,6 +326,9 @@
 }
 .wd-dark-gray{
     color: dimgray;
+}
+.wd-steel-white{
+    background-color: steelblue;
 }
 .wd-bg-lg{
     background-color: lightgray;
