@@ -1,0 +1,12 @@
+.wd-con{
+display: flex;
+justify-content: flex-start;
+}
+.wd-neg-top{
+margin-top: -4px;
+}
+
+.wd-con1{
+display: flex;
+justify-content: flex-end;
+}
