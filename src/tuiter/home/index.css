@@ -5,8 +5,52 @@ justify-content: flex-start;
 .wd-neg-top{
 margin-top: -4px;
 }
-
+.wd-fwidth{
+width: 500px;
+}
+.wd-red{
+color: red;
+}
+.wd-fw-800{
+font-weight: 500;
+color: 2px solid black;
+}
+.wd-mt-30{
+margin-top: 400px;
+}
+.wd-gray{
+color:dimgray;
+}
+.wd-width{
+width: 10px;
+}
 .wd-con1{
 display: flex;
 justify-content: flex-end;
+}
+.wd-neg-left{
+margin-left: -55px;
+}
+.wd-neg-left-70{
+margin-left: -70px;
+}
+.wd-neg-left-90{
+margin-left: -90px;
+}
+.wd-neg-left-80{
+margin-left: -80px;
+}
+.wd-neg-left-100{
+margin-left: -100px;
+}
+.wd-neg-left-50{
+margin-left: -47px;
+}
+.wd-mar-neg-5{
+margin-top: -100px;
+}
+.wd-save{
+position: absolute;
+top: 11px;
+right: 8px;
 }

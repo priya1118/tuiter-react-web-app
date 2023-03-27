@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "SpaceX.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 2345,
+    "topic": "Autopilot",
+    "userName": "Tesla",
+    "time": "4d",
+    "title": "Technology Advancement - New Driver Assistance System",
+    "image": "tesla1.jpg",
+    "liked": false,
+    "replies": 234,
+    "retuits": 543,
+    "likes": 3456,
+    "handle": "@tesla",
+    "tuit": "Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with eight external cameras and powerful vision processing to provide an additional layer of safety. All vehicles built for the North American market now use our camera-based Tesla Vision to deliver Autopilot features, rather than radar.\n\nAutopilot comes standard on every new Tesla. For owners who took delivery of their cars without Autopilot, there are multiple packages available for purchase, depending on when your car was built: Autopilot, Enhanced Autopilot and Full Self-Driving Capability."
+  },
+  {
+    "_id": 2349,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "Tesla Cybertruck",
+    "image": "SpaceX.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass. Now entering a new class of strength, speed and versatility—only possible with an all-electric design. The powerful drivetrain and low center of gravity provides extraordinary traction control and torque—enabling acceleration from 0-60 mph in as little as 2.9 seconds and up to 500 miles of range."
+  }
+]
