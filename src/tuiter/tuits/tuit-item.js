@@ -9,11 +9,13 @@ import {updateTuitThunk} from "../../services/tuits-thunks";
 import { useSelector } from "react-redux";
 
 const TuitItem = (tuits) => {
+
   const tuit = tuits.tuit
   console.log(tuit)
   console.log(tuit._id)
   console.log(tuit.dislikes)
   const dispatch = useDispatch();
+
   const deleteTuitHandler = (id) => {
    dispatch(deleteTuitThunk(id));
  };
