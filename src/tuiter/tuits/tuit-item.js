@@ -12,6 +12,7 @@ const TuitItem = (tuits) => {
   const tuit = tuits.tuit
   console.log(tuit)
   console.log(tuit._id)
+  console.log(tuit.dislikes)
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
    dispatch(deleteTuitThunk(id));
@@ -47,24 +48,23 @@ const TuitItem = (tuits) => {
               <div className="col pt-1">
                 <button
                   id="like-button"
-                  className="col-3"
+                  className="col-5"
                   style={{ border: 'none', backgroundColor: 'transparent' }}>
-                  {tuit.liked ? (
                     <HeartFill className="wd-red" onClick={() => dispatch(updateTuitThunk({
                                                                         ...tuit,
                                                                         likes: tuit.likes + 1
                                                                       }))
                                                                       } />
-                  ) : (
-                    <Heart className="wd-gray" onClick={() => dispatch(updateTuitThunk({
-                                                                     ...tuit,
-                                                                     likes: tuit.likes + 1
-                                                                   })
-                                                                   )} />
-                  )}
                 </button>
-              <text className="col">{tuit.likes}</text></div>
-              <button className="col" style={{"border":"none","background-color":"transparent"}}><Upload style={{"color":"dimgray"}}/></button>
+              <text className="col-6">{tuit.likes}</text></div>
+              <div className="col-2 pt-1">
+              <i className="col-10 bi bi-hand-thumbs-down" onClick={() => dispatch(updateTuitThunk({
+                                                             ...tuit,
+                                                             dislikes: tuit.dislikes + 1
+                                                          })
+                                                        )}></i>
+              <text className="col-2">{tuit.dislikes}</text> </div>
+              <button className="col-3" style={{"border":"none","background-color":"transparent"}}><Upload style={{"color":"dimgray"}}/></button>
         </div>
        </div>
      </div>
