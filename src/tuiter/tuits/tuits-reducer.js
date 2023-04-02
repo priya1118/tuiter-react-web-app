@@ -1,5 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import tuitsArray from '../data/tuits.json';
+import {updateTuitThunk, createTuitThunk, deleteTuitThunk, findTuitsThunk} from "../../services/tuits-thunks";
+
+const initialState = {
+   tuits: [],
+   loading: false
+}
 
 const currentUser = {
  "userName": "NASA",
@@ -19,29 +25,48 @@ const templateTuit = {
 
 const tuitsSlice = createSlice({
  name: 'tuits',
- initialState: tuitsArray,
- reducers: {
-       deleteTuit(state, action) {
-         const index = state.findIndex(tuit =>
-               tuit._id === action.payload);
-         state.splice(index, 1);
-       },
-    createTuit(state, action) {
-      state.unshift({
-        ...action.payload,
-        ...templateTuit,
-        _id: (new Date()).getTime(),
-      })
+  initialState,
+  extraReducers: {
+    [findTuitsThunk.pending]:
+       (state) => {
+          state.loading = true
+          state.tuits = []
     },
+    [findTuitsThunk.fulfilled]:
+       (state, { payload }) => {
+          state.loading = false
+          state.tuits = payload
+    },
+    [findTuitsThunk.rejected]:
+       (state, action) => {
+          state.loading = false
+          state.error = action.error
+    },
+    [deleteTuitThunk.fulfilled] :
+          (state, { payload }) => {
+          state.loading = false
+          state.tuits = state.tuits
+            .filter(t => t._id !== payload)
+        },
+    [createTuitThunk.fulfilled]:
+       (state, { payload }) => {
+         state.loading = false
+         state.tuits.push(payload)
+    },
+    [updateTuitThunk.fulfilled]:
+      (state, { payload }) => {
+        state.loading = false
+        const tuitNdx = state.tuits
+          .findIndex((t) => t._id === payload._id)
+        state.tuits[tuitNdx] = {
+          ...state.tuits[tuitNdx],
+          ...payload
+        }
+      }
 
-    updateTuit(state, action){
-     const tuit = state.find((tuit) =>
-               tuit._id === action.payload._id)
-         tuit.liked = !tuit.liked
-         tuit.liked ? tuit.likes = tuit.likes + 1 : tuit.likes = tuit.likes - 1
-     }
-  }
-});
+  },
+ });
+
 
 export const {createTuit, deleteTuit, updateTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;

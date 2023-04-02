@@ -12,11 +12,11 @@ import profile from "./reducers/profile.js"
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 const store = configureStore(
-  {reducer: {who: whoReducer, tuits: tuitsReducer, user: profile}});
+  {reducer: {who: whoReducer, tuitsData: tuitsReducer, user: profile}});
 
 
 function Tuiter() {
- return (
+  return (
     <Provider store={store}>
    <div className="row mt-2">
      <div className="col-2 col-md-2 col-lg-1 col-xl-2">
