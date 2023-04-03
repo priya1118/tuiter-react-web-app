@@ -5,7 +5,6 @@ import WhoToFollowListItem from "./who-to-follow-list-item";
 const WhoToFollowList = () => {
   const whoArray = useSelector(
                     (state) => state.who);
-  console.log(whoArray)
  return(
    <div>
    <ul className="list-group">

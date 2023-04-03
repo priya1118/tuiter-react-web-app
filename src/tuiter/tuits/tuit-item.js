@@ -9,7 +9,6 @@ import {updateTuitThunk} from "../../services/tuits-thunks";
 import { useSelector } from "react-redux";
 
 const TuitItem = (tuits) => {
-
   const tuit = tuits.tuit
   console.log(tuit)
   console.log(tuit._id)
@@ -24,7 +23,7 @@ const TuitItem = (tuits) => {
     <li className="list-group-item">
      <div className="row">
        <div className="col-1">
-         <img className="rounded-circle" height={48} width={48} src={`../images/${tuit.image}`}/>
+         <img className="rounded-circle" height={48} width={48} src={`../../images/${tuit.image}`}/>
        </div>
        <div className="col-11">
          <div className="row ps-2">

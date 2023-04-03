@@ -3,8 +3,6 @@ const WhoToFollowListItem = (
 {
    who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
  }) => {
-console.log(who)
-console.log(who.userName)
 
  return(
   <li className="list-group-item">
