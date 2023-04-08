@@ -40,6 +40,7 @@ const TuitItem = (tuits) => {
            <div><i className="bi bi-x-lg ps-26 col-1" onClick={() => deleteTuitHandler(tuit._id)}></i></div>
          </div>
          </div>
+
         <div className="ms-2">{tuit.tuit}</div>
         <div className="wd-con row" style={{"justify-content":"space-between"}}>
               <div className="col"><div className="row"><button className="col-3" style={{"border":"none","background-color":"transparent"}}><Chat style={{"color":"dimgray"}}/></button>
