@@ -25,6 +25,7 @@ const TuitItem = (tuits) => {
        <div className="col-1">
          <img className="rounded-circle" height={48} width={48} src={`../../images/${tuit.image}`}/>
        </div>
+
        <div className="col-11">
          <div className="row ps-2">
          <div className="col-11">

@@ -23,10 +23,6 @@ const EditProfileComponent = () => {
     const newJson = {...profile}
     newJson["firstName"] = event.target.value
     setProfile(newJson)
-    // setProfile(prevProfile => ({
-    //   ...prevProfile,
-    //   firstName: event.target.value,
-    // }));
     console.log("first ," ,profile)
   }
 
