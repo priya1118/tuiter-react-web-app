@@ -13,6 +13,7 @@ const TuitItem = (tuits) => {
   console.log(tuit)
   console.log(tuit._id)
   console.log(tuit.dislikes)
+  console.log(tuit.likes)
   const dispatch = useDispatch();
 
   const deleteTuitHandler = (id) => {
